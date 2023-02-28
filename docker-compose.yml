@@ -24,7 +24,7 @@ services:
       WORDPRESS_DB_PASSWORD: test123
       WORDPRESS_DB_NAME: wordpressdb
     volumes:
-      - wordpress:/var/www/html
+      - wordpressvol:/var/www/html
 
   phpmyadmin:
     image: phpmyadmin
@@ -36,4 +36,4 @@ services:
 
 volumes:
   mariadbdata:
-  wordpess:
+  wordpressvol:
