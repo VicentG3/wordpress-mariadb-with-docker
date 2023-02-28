@@ -33,6 +33,9 @@ services:
       - "81:80"
     environment:
       - PMA_ARBITRARY=1
+      - PMA_HOST=mariadb
+      - PMA_USER=root
+      - PMA_PASSWORD=password
 
 volumes:
   mariadbdata:
