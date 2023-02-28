@@ -11,7 +11,7 @@ services:
     ports: 
       - "3306:3306"
     volumes:
-      -mariadbdata:/var/lib/mysql
+      - mariadbdata:/var/lib/mysql
   
   wordpess:
     image: wordpress
